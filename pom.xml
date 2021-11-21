@@ -51,6 +51,7 @@
     <module>mock</module>
     <module>apt-test-generator</module>
     <module>benchmark</module>
+    <module>feign-demo</module>
   </modules>
 
   <properties>
@@ -496,12 +497,12 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!--<plugin>
         <groupId>com.mycila</groupId>
         <artifactId>license-maven-plugin</artifactId>
         <version>${license-maven-plugin.version}</version>
         <configuration>
-          <!-- session.executionRootDirectory resolves properly even with nested modules -->
+          &lt;!&ndash; session.executionRootDirectory resolves properly even with nested modules &ndash;&gt;
           <header>${main.basedir}/src/etc/header.txt</header>
           <excludes>
             <exclude>.travis.yml</exclude>
@@ -539,7 +540,7 @@
             <version>${license-maven-plugin.version}</version>
           </dependency>
         </dependencies>
-      </plugin>
+      </plugin>-->
       <plugin>
         <groupId>com.marvinformatics.formatter</groupId>
         <artifactId>formatter-maven-plugin</artifactId>
